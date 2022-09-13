@@ -7,10 +7,22 @@
     --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
 }
 
+html *
+{
+    font-family: "Sora", sans-serif !important;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
 body 
 {
     font-family: "Sora", sans-serif;
     line-height: 1.7;
+    max-width: 100%;
+    overflow-x: hidden;
     color: var(--body);
 }
 
@@ -24,45 +36,26 @@ a {
     text-decoration: none;
 }
 
+.navbar {
+    box-shadow: var(--box-shadow);
+}
 
 
-h1,h2,h3,h4,h5,h6,
-.display-4 
-{
-    color: var(--dark);
+.logo {
+    width: 300px;
+    height: 60px;
+}
+
+.navbar .nav-link {
+    font-size: 20px;
     font-weight: 700;
-    font-family: "Sora", sans-serif;
+    padding: 0 10px;
+    margin-right: 20px;
+    color: #21252f;
 }
 
-#nav-bar
-{
-    position: static;
-    top: 0;
-    z-index: 10;
-}
-.navbar-nav li 
-{
-    padding: 0 10px;
-    display: inline;
-    padding-right: 30px;
-    margin-right: 10;
-    font-weight: 600;
-    
-}
-.navbar-nav li a
-{
-    color: #343A40 !important;
-}
-.navbar
-{
-    width: 100%;
-    padding: 10 !important;
-    font-size: 20;
-}
-.navbar-brand img
-{
-    padding-left: 9px;
-    height: 50
+.navbar .nav-link.active {
+    color: var(--primary) !important;
 }
 
 .hero 
@@ -119,6 +112,10 @@ section
     flex: none;
 }
 
+.features
+{
+    width:100%;
+}
 
 .service {
     position: relative;
@@ -180,6 +177,13 @@ section
     transition: all 0.4s ease;
     opacity: 0;
 }
+.carousel-item
+{
+    max-width: 100%;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+}
 
 .project img {
     transition: all 0.4s ease;   
@@ -194,3 +198,25 @@ section
 .project:hover img {
     transform: scale(1.1);
 }
+
+.footer-top {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--dark);
+}
+
+.footer-top a {
+    color: var(--white);
+}
+
+.footer-top a:hover {
+    color: var(--primary);
+}
+
+.footer-bottom {
+    background-color: #242933;
+    padding-top: 10px;
+}
+
+
+
