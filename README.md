@@ -1,1 +1,1 @@
-Web stranica napravljena za izmišljenu firmu, koristi HTML, CSS i JS
+Web stranica napravljena za izmišljenu firmu, koristi HTML i CSS
